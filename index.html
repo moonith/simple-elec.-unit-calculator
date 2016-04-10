@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <style>
+      body {
+        background-color: green;
+      }
+
+      button {
+        font: inherit;
+        background: none;
+        border-radius: 20px;
+        background-color: cyan;
+        overflow: visible;
+        border: 0;
+        padding: 0;
+        width: 20%;
+        height: 48px;
+        cursor: pointer;
+      }
+      input {
+          height: 48px;
+          font-size: 32px;
+          width: 40%;
+          padding: 0;
+          border: 0;
+      }
+      .module-container {
+        width: 1200px;
+        height: 400px;
+        text-align: center;
+        margin: 0 auto;
+        padding-top: 100px;
+        font-family: cursive;
+        font-size: 24px;
+      }
+
+      .data-input {
+        display: inline-block;
+      }
+
+      .data-input:first-child {
+        padding-right: 32px;
+      }
+
+      .data-input label {
+        padding-right: 16px;
+      }
+
+      .module-control-buttons {
+        padding-top: 48px;
+        padding-bottom: 48px;
+      }
+    </style>
+    <title>Ćwiczenie 4, JavaScript</title>
+  </head>
+  <body>
+    <div class="module-container">
+      <div>
+          <div class="data-input">
+            <label for="resistanceInput">
+              R =
+            </label>
+            <input type="text"
+              id="resistanceInput"
+              name="resistanceInput"
+            /> &#8486
+          </div>
+          <div class="data-input">
+
+            <label for="reactanceInput">
+              X =
+            </label>
+            <input type="text"
+              id="reactanceInput"
+              name="reactanceInput"
+            /> &#8486
+          </div>
+        </div>
+        <div class="module-control-buttons">
+          <button class="count-up"
+            id="countUp"
+            type="button"
+          >
+            Przelicz w gorę
+          </button>
+          <button class="count-down"
+            id="countDown"
+            type="button"
+          >
+            Przelicz w doł
+          </button>
+        </div>
+        <div>
+          <div class="data-input">
+            <label for="impedanceInput">
+              |Z| =
+            </label>
+            <input type="text"
+              id="impedanceInput"
+              name="impedanceInput"
+            /> &#8486
+          </div>
+
+          <div class="data-input">
+            <label for="angleInput">
+              &#8737 =
+            </label>
+            <input type="text"
+              id="angleInput"
+              name="angleInput"
+            /> &#176
+          </div>
+        </div>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>
